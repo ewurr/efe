@@ -17,7 +17,7 @@ st.set_page_config(
 # Helper functions
 def load_model_and_files():
    
-    with open('bank_marketing_model_V2.pkl'), 'rb') as f:
+    with open('bank_marketing_model_V2.pkl', 'rb') as f:
         model = pickle.load(f)
 
     with open('feature_names.pkl', 'rb') as f:
