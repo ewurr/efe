@@ -3,5 +3,6 @@ pandas
 numpy
 matplotlib
 seaborn
-Pillow
-pickle
+scikit-learn
+imbalanced-learn
+scipy
