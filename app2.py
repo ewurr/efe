@@ -16,18 +16,17 @@ st.set_page_config(
 
 # Helper functions
 def load_model_and_files():
-    current_dir = os.path.dirname(__file__)
-
-    with open(os.path.join(current_dir, 'bank_marketing_model_V2.pkl'), 'rb') as f:
+   
+    with open('bank_marketing_model_V2.pkl'), 'rb') as f:
         model = pickle.load(f)
 
-    with open(os.path.join(current_dir, 'feature_names.pkl'), 'rb') as f:
+    with open('feature_names.pkl', 'rb') as f:
         feature_names = pickle.load(f)
 
-    with open(os.path.join(current_dir, 'label_encoder.pkl'), 'rb') as f:
+    with open('label_encoder.pkl'), 'rb') as f:
         label_encoder = pickle.load(f)
 
-    with open(os.path.join(current_dir, 'deployment_info.pkl'), 'rb') as f:
+    with open('deployment_info.pkl'), 'rb') as f:
         deployment_info = pickle.load(f)
 
     return model, feature_names, label_encoder, deployment_info
