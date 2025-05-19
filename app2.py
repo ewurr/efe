@@ -23,10 +23,10 @@ def load_model_and_files():
     with open('feature_names.pkl', 'rb') as f:
         feature_names = pickle.load(f)
 
-    with open('label_encoder.pkl'), 'rb') as f:
+    with open('label_encoder.pkl', 'rb') as f:
         label_encoder = pickle.load(f)
 
-    with open('deployment_info.pkl'), 'rb') as f:
+    with open('deployment_info.pkl', 'rb') as f:
         deployment_info = pickle.load(f)
 
     return model, feature_names, label_encoder, deployment_info
